@@ -5,22 +5,22 @@ const Navbar = () => {
   const [isDropdownHover, setisDropdownHover] = useState(false)
 
   return (
-    <nav className="bg-primary border-gray-200 dark:bg-gray-900 dark:border-gray-700 p-1">
+    <nav className="bg-primary border-gray-200 p-1">
       <div className="w-full  flex flex-wrap items-center justify-between ">
         <a href="/#" className="flex items-center pl-2">
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
+            src="/magnoliav2.webp"
             className="h-6 mr-3 sm:h-10"
             alt="Flowbite Logo"
           />
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-xl font-semibold whitespace-nowrap ">
             Magnolias Salon
           </span>
         </a>
         <button
           data-collapse-toggle="navbar-dropdown"
           type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
           aria-controls="navbar-dropdown"
           aria-expanded="false"
           onClick={() => {
@@ -50,11 +50,11 @@ const Navbar = () => {
           }
           id="navbar-dropdown"
         >
-          <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-primary md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-primary dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-primary md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-primary">
             <li>
               <a
                 href="/#"
-                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
                 aria-current="page"
               >
                 Home
@@ -72,7 +72,7 @@ const Navbar = () => {
                 id="dropdownNavbarLink"
                 
                 
-                className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
               >
                 Dropdown
                 <svg
@@ -91,16 +91,16 @@ const Navbar = () => {
               </button>
               <div
                 id="dropdownNavbar"
-                className={(isDropdownHover ? "absolute" : "hidden") + " drop-shadow-2xl z-10 font-normal bg-primary divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600"}
+                className={(isDropdownHover ? "absolute" : "hidden") + " drop-shadow-2xl z-10 font-normal bg-primary divide-y divide-gray-100 rounded shadow w-44 "}
               >
                 <ul
-                  className="py-1 text-sm text-gray-700 dark:text-gray-400"
+                  className="py-1 text-sm text-gray-700 "
                   aria-labelledby="dropdownLargeButton"
                 >
                   <li>
                     <a
                       href="/#"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      className="block px-4 py-2 hover:bg-gray-100 "
                     >
                       Dashboard
                     </a>
@@ -108,7 +108,7 @@ const Navbar = () => {
                   <li>
                     <a
                       href="/#"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      className="block px-4 py-2 hover:bg-gray-100 "
                     >
                       Settings
                     </a>
@@ -116,7 +116,7 @@ const Navbar = () => {
                   <li>
                     <a
                       href="/#"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      className="block px-4 py-2 hover:bg-gray-100 "
                     >
                       Earnings
                     </a>

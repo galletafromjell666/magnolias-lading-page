@@ -7,7 +7,7 @@ module.exports = {
     extend: {colors: {
       primary: "#FFDCE4",
       white: "#FAF2F2",
-      brick: "#B2224C"
+      brick: "#b4224c"
     },},
   },
   plugins: [],
