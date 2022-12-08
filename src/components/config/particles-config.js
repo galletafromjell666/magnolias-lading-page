@@ -86,7 +86,7 @@ const particlesConfig = {
           links: {
             opacity: 0.5
           },
-          radius: 60
+          radius: 120
         },
         grab: {
           distance: 400,
@@ -341,13 +341,13 @@ const particlesConfig = {
           minimumValue: 1
         },
         value: {
-          min: 20,
-          max: 25
+          min: 70,
+          max: 90
         },
         animation: {
           count: 0,
           enable: false,
-          speed: 40,
+          speed: 20,
           decay: 0,
           sync: false,
           destroy: "none",

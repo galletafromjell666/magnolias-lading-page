@@ -5,9 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {colors: {
-      primary: "#FFDCE4",
+      primary: "#EDD5D8",
       white: "#FAF2F2",
-      brick: "#b4224c"
+      brick: "#FCF4F0"
     },},
   },
   plugins: [],

@@ -2,10 +2,10 @@ import React from "react";
 import { useState } from "react";
 const Navbar = () => {
   const [isNavOpen, setisNavOpen] = useState(false);
-  const [isDropdownHover, setisDropdownHover] = useState(false)
+  const [isDropdownHover, setisDropdownHover] = useState(false);
 
   return (
-    <nav className="bg-primary border-gray-200 p-1">
+    <nav className="bg-primary border-gray-200 p-1 text-selection-disable">
       <div className="w-full  flex flex-wrap items-center justify-between ">
         <a href="/#" className="flex items-center pl-2">
           <img
@@ -60,18 +60,18 @@ const Navbar = () => {
                 Home
               </a>
             </li>
-            <li onMouseEnter={() => {
-                  setisDropdownHover(!isDropdownHover);
-                  console.log('Mouse enter', true)
-                }}
-                onMouseLeave={() => {
-                  setisDropdownHover(!isDropdownHover);
-                  console.log('Mouse enter', false)
-                }}>
+            <li
+              onMouseEnter={() => {
+                setisDropdownHover(!isDropdownHover);
+                console.log("Mouse enter", true);
+              }}
+              onMouseLeave={() => {
+                setisDropdownHover(!isDropdownHover);
+                console.log("Mouse enter", false);
+              }}
+            >
               <button
                 id="dropdownNavbarLink"
-                
-                
                 className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
               >
                 Dropdown
@@ -91,33 +91,27 @@ const Navbar = () => {
               </button>
               <div
                 id="dropdownNavbar"
-                className={(isDropdownHover ? "absolute" : "hidden") + " drop-shadow-2xl z-10 font-normal bg-primary divide-y divide-gray-100 rounded shadow w-44 "}
+                className={
+                  (isDropdownHover ? "absolute" : "hidden") +
+                  " drop-shadow-2xl z-10 font-normal bg-primary divide-y divide-gray-100 rounded shadow w-44 "
+                }
               >
                 <ul
                   className="py-1 text-sm text-gray-700 "
                   aria-labelledby="dropdownLargeButton"
                 >
                   <li>
-                    <a
-                      href="/#"
-                      className="block px-4 py-2 hover:bg-gray-100 "
-                    >
+                    <a href="/#" className="block px-4 py-2 hover:bg-gray-100 ">
                       Dashboard
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="/#"
-                      className="block px-4 py-2 hover:bg-gray-100 "
-                    >
+                    <a href="/#" className="block px-4 py-2 hover:bg-gray-100 ">
                       Settings
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="/#"
-                      className="block px-4 py-2 hover:bg-gray-100 "
-                    >
+                    <a href="/#" className="block px-4 py-2 hover:bg-gray-100 ">
                       Earnings
                     </a>
                   </li>
