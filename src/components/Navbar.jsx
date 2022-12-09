@@ -5,15 +5,15 @@ const Navbar = () => {
   const [isDropdownHover, setisDropdownHover] = useState(false);
 
   return (
-    <nav className="bg-primary border-gray-200 p-1 text-selection-disable">
+    <nav className="bg-primary font-inter text-2xl border-gray-200 p-1 text-selection-disable">
       <div className="w-full  flex flex-wrap items-center justify-between ">
         <a href="/#" className="flex items-center pl-2">
           <img
             src="/magnoliav2.webp"
             className="h-6 mr-3 sm:h-10"
-            alt="Flowbite Logo"
+            alt="Magnolias salon Logo"
           />
-          <span className="self-center text-xl font-semibold whitespace-nowrap ">
+          <span className="self-center font-averia text-2xl font-semibold whitespace-nowrap ">
             Magnolias Salon
           </span>
         </a>
@@ -36,9 +36,7 @@ const Navbar = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
             ></path>
           </svg>
         </button>
@@ -57,24 +55,22 @@ const Navbar = () => {
                 className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
                 aria-current="page"
               >
-                Home
+                Inicio
               </a>
             </li>
             <li
               onMouseEnter={() => {
                 setisDropdownHover(!isDropdownHover);
-                console.log("Mouse enter", true);
               }}
               onMouseLeave={() => {
                 setisDropdownHover(!isDropdownHover);
-                console.log("Mouse enter", false);
               }}
             >
               <button
                 id="dropdownNavbarLink"
                 className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
               >
-                Dropdown
+                Servicios
                 <svg
                   className="w-5 h-5 ml-1"
                   aria-hidden="true"
@@ -83,9 +79,7 @@ const Navbar = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
                   ></path>
                 </svg>
               </button>
@@ -123,7 +117,7 @@ const Navbar = () => {
                 href="/#"
                 className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Services
+                Newsletter
               </a>
             </li>
             <li>
@@ -131,7 +125,7 @@ const Navbar = () => {
                 href="/#"
                 className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Pricing
+                Direccion
               </a>
             </li>
             <li>
@@ -139,7 +133,7 @@ const Navbar = () => {
                 href="/#"
                 className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Contact
+                Contactanos
               </a>
             </li>
           </ul>
