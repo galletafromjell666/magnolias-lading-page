@@ -49,14 +49,14 @@ const ServicesSection = () => {
   //console.log(test01);
   return (
     <div className="w-full bg-primary">
-      <div className="mx-auto bg-primary h-[auto] w-[90%]  md:w-[90%] 3xl:container 3xl:w-[90%] xl:px-8">
+      <div className="mx-auto bg-primary pb-2 h-[auto] w-[90%]  md:w-[80%] 3xl:container 3xl:w-[80%] xl:px-8 md:pb-8">
         <div className="w-full  py-8">
           <h1 className="text-3xl font-averia font-semibold">Browse Services</h1>
           <h2 className="text-xl  font-inter font-light text-black/75">
             Manage our bussiness
           </h2>
         </div>
-        <div className="grid pb-[100px] font-averia grid-cols-2 h-auto w-full grid-rows-custom grid-flow-row gap-6 md:gap-x-10 md:h-[750px] md:grid-cols-3 xl:h-[1100px] xl:gap-x-20 md:gap-y-10 ">
+        <div className="grid font-averia grid-cols-2 h-auto w-full grid-rows-custom grid-flow-row gap-6 gap-y-2 md:gap-x-12  md:h-[700px] md:grid-cols-3 xl:h-[1000px] xl:gap-x-20 md:gap-y-4 ">
           {test01.map((uwu) => {
             //console.log(uwu);
             return <SectionBox key={uwu.id} {...uwu} />;
