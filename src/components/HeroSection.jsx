@@ -2,7 +2,7 @@ import React from "react";
 import ParticlesBackground from "./ParticlesBackground";
 const HeroSection = () => {
   return (
-    <div className="relative  w-full min-w-fit bg-primary flex flex-col md:flex-row md:h-[35rem] text-selection-disable">
+    <div id="hero-section" className="relative  w-full min-w-fit bg-primary flex flex-col md:flex-row md:h-[35rem] text-selection-disable">
       <ParticlesBackground />
       <div className="flex-1 w-100 md:w-40 z-10 ">
         <div className="flex font-averia h-full w-full py-5 justify-center items-center flex-col text-5xl md:text-6xl md:py-0 md:pl-6">
