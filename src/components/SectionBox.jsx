@@ -1,11 +1,31 @@
 import React from "react";
 
-const SectionBox = ({title,imgSrc,tailwindClass}) => {
- // console.log(title,imgSrc,tailwindClass)
+const SectionBox = ({ title, imgSrc, tailwindClass, details }) => {
   return (
-    <div id="uwu" className={tailwindClass }>
-      <img style={{"objectFit": "cover"}} className=" w-full h-[calc(265px-3rem)] md:h-[calc(100%-3rem)] rounded-lg" src={imgSrc} alt={title}/>
-      <h1 className="text-3xl font-light text-black/75 h-[3rem] ">{title}</h1>
+    <div
+      className={"section-box-card relative bg-fuchsia-400 rounded-lg " + tailwindClass}
+    >
+      <img
+        style={{
+          verticalAlign: "top",
+          objectFit: "cover",
+          transition: "0.6s",
+          transitionProperty: "opacity",
+        }}
+        className="relative w-full h-full rounded-lg opacity-80"
+        src={imgSrc}
+        alt={title}
+      />
+      <div className="z-10 absolute top-0 right-0 text-white w-full h-full text-center flex flex-col justify-around">
+        <div className="card-details">
+        <h1 className="text-3xl tracking-wide md:text-4xl font-bold lg:text-5xl text-center">{title}</h1>
+        <div className="card-details-text px-4 hidden md:block">
+          <h4 className="text-xl font-inter font-semibold">
+            {details}
+          </h4>
+        </div>
+        </div>
+      </div>
     </div>
   );
 };

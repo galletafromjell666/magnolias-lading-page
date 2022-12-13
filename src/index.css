@@ -12,6 +12,35 @@
 
 }
 
+
+
+
+.section-box-card:hover img {
+    opacity: 1;
+}
+
+.section-box-card h1{
+    transition: 0.4s;
+    transition-property: transform;
+}
+.section-box-card:hover h1{
+    transform: translateY(-50%);
+}
+
+.section-box-card .card-details h4{
+    opacity: 0;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+}
+.section-box-card:hover .card-details h4{
+    opacity: 1;
+    transform: translateY(-15%);
+}
+
+.section-box-card:hover .card-details-text{
+    display: block;
+}
+
 .text-selection-disable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -24,6 +53,39 @@
 .grid-rows-custom{
     grid-template-rows: 33% 33% 33%;
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
 
 @media only screen and (max-width: 768px) {
     .grid-rows-custom{
