@@ -19,8 +19,8 @@ const SectionBox = ({ title, imgSrc, tailwindClass, details }) => {
       <div className="z-10 absolute top-0 right-0 text-white w-full h-full text-center flex flex-col justify-around">
         <div className="card-details">
         <h1 className="text-3xl tracking-wide md:text-4xl font-bold lg:text-5xl text-center">{title}</h1>
-        <div className="card-details-text px-4 hidden md:block">
-          <h4 className="text-xl font-inter font-semibold">
+        <div className="card-details-text px-4  md:block">
+          <h4 className="text-xl font-inter font-semibold h-0">
             {details}
           </h4>
         </div>

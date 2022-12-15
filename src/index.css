@@ -28,6 +28,7 @@
   transition-property: opacity, transform;
 }
 .section-box-card:hover .card-details h4 {
+  height: auto;
   opacity: 1;
   transform: translateY(-15%);
 }
