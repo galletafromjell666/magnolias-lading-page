@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ReviewContainer from "./components/ReviewContainer";
@@ -11,6 +12,7 @@ function App() {
       <HeroSection/>
       <ServicesSection/>
       <ReviewContainer/>
+      <Footer/>
     </div>
   );
 }
