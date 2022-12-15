@@ -10,9 +10,11 @@ const ReviewContainer = () => {
   const data = reviewsData;
   return (
     <div className="w-full h-auto bg-primary">
-      <div className="mx-auto bg-primary pb- w-[90%]  md:w-[80%] 3xl:container 3xl:w-[80%] xl:px-8 md:pb-8">
-      <div className="w-full  py-8">
-          <h1 className="text-3xl font-averia font-semibold">What our customers says</h1>
+      <div className="mx-auto bg-primary overflow-hidden w-[90%]  md:w-[80%] 3xl:container 3xl:w-[80%] xl:px-8 md:pb-8">
+        <div className="w-full  pt-4 pb-12 ">
+          <h1 className="text-3xl font-averia font-semibold">
+            What our customers says
+          </h1>
           <h2 className="text-xl  font-inter font-light text-black/75">
             Review section xd
           </h2>
@@ -20,9 +22,12 @@ const ReviewContainer = () => {
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
-          freeMode={true}
+          loop={true}
+          loopedSlides={4}
+          initialSlide={2}
+          centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 5500,
             pauseOnMouseEnter: true,
             disableOnInteraction: false,
           }}
@@ -36,30 +41,43 @@ const ReviewContainer = () => {
             },
             640: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
               slidesPerView: 3,
               spaceBetween: 40,
             },
           }}
-          modules={[FreeMode, Pagination, Autoplay]}
-          className="mySwiper"
+          modules={[Pagination, Autoplay, FreeMode]}
+          className="mySwiper custom-overflow relative"
         >
           {data.map((review) => {
             return (
-              <SwiperSlide id={review.id}>
-                <div>
-                  <div className="mb-6">
+              <SwiperSlide key={review.id} className="drop-shadow-2xl">
+                <div className="px-6 ">
+                  <div className="font-inter">
                     <img
+                      className="drop-shadow-2xl"
                       src={review.ProfilePic}
                       alt={review.name}
                     />
-                    <h4>{review.name}</h4>
-                    <h5>{review.position}</h5>
+                    <h4 className="text-xl font-bold font-averia">
+                      {review.name}
+                    </h4>
+                    <h5 className="text-md font-semilbold text-black/75 font-averia">
+                      {review.position}
+                    </h5>
                   </div>
-                  <div>
-                    <p className="px-4 w-full h-[75px]">{review.reviewContent}</p>
+                  <div className="flex items-center content-center overflow-hidden h-[180px]">
+                    <p className="review-quote relative text-xl w-full">
+                      <span className="text-4xl font-bold">"</span>
+                      {review.reviewContent}
+                      <span className="text-4xl absolute font-bold bottom-[-0.3rem] "> "</span>
+                    </p>
                   </div>
                 </div>
               </SwiperSlide>
