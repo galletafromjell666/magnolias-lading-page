@@ -1,3 +1,4 @@
+import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
@@ -12,6 +13,7 @@ function App() {
       <HeroSection/>
       <ServicesSection/>
       <ReviewContainer/>
+      <ContactUs/>
       <Footer/>
     </div>
   );
