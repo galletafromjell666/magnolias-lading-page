@@ -12,7 +12,7 @@ const ContactUs = () => {
             We will be happy to help you
           </h2>
         </div>
-        <div className="w-full flex flex-col lg:flex-row h-[800px] md:h-[400px]">
+        <div className="w-full flex flex-col lg:flex-row h-[650px] md:h-[400px]">
           <div className="h-[220px] mb-6  md:flex-1  md:mb-0 md:h-full">
             <div className="flex flex-col h-full justify-center p-8">
               <h1 className="mx-6 my-6 text-center text-xl font-inter">
