@@ -126,6 +126,10 @@
   transition: filter 0.9s ease-in-out;
 }
 
+.review-stars{
+  filter: grayscale(1%)
+}
+
 .swiper-pagination-bullet-active {
   background-color: rgb(255, 255, 255) !important;
 }

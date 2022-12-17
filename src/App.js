@@ -12,7 +12,7 @@ import { useEffect } from "react";
 function App() {
   useEffect(() => {
     AOS.init({once: true,
-      offset: 120,});
+      offset: 50,});
     AOS.refresh();
   }, [])
   return (

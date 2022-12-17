@@ -16,8 +16,9 @@ const HeroSection = () => {
               nails and beauty <br></br>salon
             </h1>
             <h2 className=" mt-4 text-xl  md:text-2xl">
-            Es tu momento de brillar <span className=" text-2xl md:text-4xl">✨</span>
-          </h2>
+              Es tu momento de brillar{" "}
+              <span className=" text-2xl md:text-4xl">✨</span>
+            </h2>
           </div>
         </div>
       </div>
@@ -27,11 +28,25 @@ const HeroSection = () => {
           src="/hero-pexels-vincenzo-giove-1925482.png"
           alt="girl smiling"
         ></img>
-        <div data-aos="fade-up-left" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-duration="600" className="absolute w-80 py-4 px-4 md:w-[23rem] h-[6rem] bottom-[15%] inset-x-0 mx-auto flex flex-row justify-around items-center  bg-brick rounded-[1rem] shadow-md shadow-pink-400/25 text-black/75 md:left-[-4rem] md:py-6 md:px-10">
+        <div
+          data-aos="fade-up-left"
+          data-aos-delay="400"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="600"
+          className="absolute w-80 py-4 px-4 md:w-[23rem] h-[6rem] bottom-[15%] inset-x-0 mx-auto flex flex-row justify-around items-center  bg-slate-100 rounded-[1rem] shadow-md drop-shadow-xl text-black/75 md:left-[-4rem] md:py-6 md:px-10"
+        >
           <h2 className="text-lg text-black/90 font-bold">
             Pregunta por nuestras promociones diarias
           </h2>
-          <div><SocialIcon className="btn-social-media" network="whatsapp" /></div>
+          <div>
+            <a
+              href="https://api.whatsapp.com/send?phone=50372862804"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon className="btn-social-media" network="whatsapp" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

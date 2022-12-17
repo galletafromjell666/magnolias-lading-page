@@ -68,8 +68,8 @@ const ReviewContainer = () => {
                     <h4 className="text-xl font-bold font-averia">
                       {review.name}
                     </h4>
-                    <h5 className="text-md font-semilbold text-black/75 font-averia">
-                      {review.position}
+                    <h5 className="review-stars text-md font-semilbold text-black/75 font-averia">
+                    ⭐⭐⭐⭐⭐
                     </h5>
                   </div>
                   <div className="flex items-center content-center overflow-hidden h-[180px]">

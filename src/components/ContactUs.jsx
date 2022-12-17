@@ -19,9 +19,9 @@ const ContactUs = () => {
                 Síguenos en nuestras redes sociales, no te pierdas de nuestras promociones.
               </h1>
               <div className="flex flex-row justify-evenly items-center ">
-                <SocialIcon className="btn-social-media" network="whatsapp" />
-                <SocialIcon className="btn-social-media" network="facebook" />
-                <SocialIcon className="btn-social-media" network="instagram" />
+                <a href="https://api.whatsapp.com/send?phone=50372862804" target="_blank" rel="noopener noreferrer"><SocialIcon className="btn-social-media" network="whatsapp" /></a>
+                <a href="https://www.facebook.com/people/Magnolias-Sal%C3%B3n/100063964803631/" target="_blank" rel="noopener noreferrer"><SocialIcon className="btn-social-media" network="facebook" /></a>
+                <a href="https://www.instagram.com/salon.magnolias/" target="_blank" rel="noopener noreferrer"><SocialIcon className="btn-social-media" network="instagram" /></a>
                 <SocialIcon className="btn-social-media" network="email" />
               </div>
             </div>
