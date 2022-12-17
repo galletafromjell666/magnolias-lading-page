@@ -1,46 +1,47 @@
 const reviewsData = [
   {
     id: 1,
-    name: "Sarah Connor",
+    name: "Magaly Fuentes",
     position: "CEO Facebook",
     ProfilePic:
-      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1130624/pexels-photo-1130624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     reviewContent:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Me gusto mucho que la atencion es personalizada y te atienden muy amablemente. El personal es muy atento y servicial.",
   },
   {
     id: 2,
-    name: "John Connor",
+    name: "Fatima Aleman",
     position: "CEO Fortnitre",
     ProfilePic:
-      "https://images.pexels.com/photos/6468055/pexels-photo-6468055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/2400001/pexels-photo-2400001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     reviewContent:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Fue una experiencia agradable y relajante, el hecho que trabajen por citas hace que el ambiente se sienta placentero.",
   },
   {
     id: 3,
-    name: "Cristiano Ronaldo",
+    name: "Majo Alfaro",
     position: "FIFA'S Director",
     ProfilePic:
-      "https://images.pexels.com/photos/157661/young-woman-shooting-model-157661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    reviewContent:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "https://images.pexels.com/photos/2954493/pexels-photo-2954493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    reviewContent: "Llevo dos años visitando este salon, la amabilidad y experiencia de la chica que me atiende me hace regresar."
+    ,
   },
   {
     id: 4,
-    name: "Son Goky",
+    name: "Karla Pineda",
     position: "Anime character",
     ProfilePic:
-      "https://images.pexels.com/photos/2023384/pexels-photo-2023384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    reviewContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "https://images.pexels.com/photos/2221875/pexels-photo-2221875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      reviewContent: "Me gusta que sea un lugar centrico y de facil acceso, me permite visitar el salon despues de un dia de trabajo para consentirme.",
+      
   },
   {
     id: 5,
-    name: "Allison Brie",
+    name: "Alexandra Asencio",
     position: "Scientist",
     ProfilePic:
-      "https://images.pexels.com/photos/1816013/pexels-photo-1816013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    reviewContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "https://images.pexels.com/photos/1844008/pexels-photo-1844008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      reviewContent: "Siempre he tenido resultados bonitos y duraderos con los productos que han utilizado en mi cabello y uñas. Muy recomendadas.",
   },
 ];
 

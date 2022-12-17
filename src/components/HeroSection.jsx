@@ -1,4 +1,5 @@
 import React from "react";
+import { SocialIcon } from "react-social-icons";
 import ParticlesBackground from "./ParticlesBackground";
 const HeroSection = () => {
   return (
@@ -12,12 +13,12 @@ const HeroSection = () => {
           <div>
             <h1 className="font-bold self">Professional</h1>
             <h1>
-              spa and beauty <br></br>center
+              nails and beauty <br></br>salon
             </h1>
-          </div>
-          <h2 className=" mt-4 text-xl md:text-2xl">
-            Are u a girl looking for some beauty?
+            <h2 className=" mt-4 text-xl  md:text-2xl">
+            Es tu momento de brillar <span className=" text-2xl md:text-4xl">✨</span>
           </h2>
+          </div>
         </div>
       </div>
       <div className="relative w-100 h-[400px] md:flex-1 md:h-full md:w-60">
@@ -26,15 +27,11 @@ const HeroSection = () => {
           src="/hero-pexels-vincenzo-giove-1925482.png"
           alt="girl smiling"
         ></img>
-        <div className="absolute w-80 py-4 px-4 md:w-[23rem] h-[6rem] bottom-[15%] inset-x-0 mx-auto flex flex-row justify-around items-center  bg-brick rounded-[1rem] shadow-md shadow-pink-400/25 text-black/75 md:left-[-4rem] md:py-6 md:px-10">
-          <h2 className="text-lg font-inter">
-            Schedule an appoinment now, it's free
+        <div data-aos="fade-up-left" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-duration="600" className="absolute w-80 py-4 px-4 md:w-[23rem] h-[6rem] bottom-[15%] inset-x-0 mx-auto flex flex-row justify-around items-center  bg-brick rounded-[1rem] shadow-md shadow-pink-400/25 text-black/75 md:left-[-4rem] md:py-6 md:px-10">
+          <h2 className="text-lg text-black/90 font-bold">
+            Pregunta por nuestras promociones diarias
           </h2>
-          <img
-            className="h-11 md:h-[3.2rem] ml-4 md:ml-0"
-            src="/whatsapp.svg"
-            alt="whatsapp logo"
-          />
+          <div><SocialIcon className="btn-social-media" network="whatsapp" /></div>
         </div>
       </div>
     </div>

@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#EDD5D8",
+        primary: "#FDE4F7",
         white: "#FAF2F2",
         brick: "#FCF4F0",
+        secondaryTextColor: "#B0938D",
       },
       screens: {
         'sm': '640px',

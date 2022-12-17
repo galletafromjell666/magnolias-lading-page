@@ -10,13 +10,13 @@ const ReviewContainer = () => {
   const data = reviewsData;
   return (
     <div className="w-full h-auto bg-primary">
-      <div className="mx-auto bg-primary overflow-hidden w-[90%]  md:w-[80%] 3xl:container 3xl:w-[80%] xl:px-8 md:pb-8">
+      <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700" className="mx-auto bg-primary overflow-hidden w-[90%]  md:w-[80%] 3xl:container 3xl:w-[80%] xl:px-8 md:pb-8">
         <div className="w-full  pt-4 pb-12 ">
           <h1 className="text-3xl font-averia font-semibold">
-            What our customers says
+          Valoraciones de nuestros clientes
           </h1>
           <h2 className="text-xl  font-inter font-light text-black/75">
-            Review section xd
+            Nuestra  motivación para continuar mejorando 
           </h2>
         </div>
         <Swiper
