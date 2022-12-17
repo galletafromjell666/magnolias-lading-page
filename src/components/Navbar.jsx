@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isDropdownHover, setisDropdownHover] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-primary font-inter text-2xl p-1 pb-0 text-selection-disable " >
+    <nav className="sticky top-0 z-50 bg-primary font-inter md:text-2xl p-1 py-0 text-selection-disable " >
       <div className="w-full  flex flex-wrap items-center justify-between ">
         <a href="/#" className="flex items-center pl-2">
           <img
@@ -13,7 +13,7 @@ const Navbar = () => {
             className="h-6 mr-3 sm:h-10"
             alt="Magnolias salon Logo"
           />
-          <span className="self-center font-averia text-2xl font-semibold whitespace-nowrap ">
+          <span className="self-center font-averia text-lg md:text-2xl font-semibold whitespace-nowrap ">
             Magnolias Salon
           </span>
         </a>

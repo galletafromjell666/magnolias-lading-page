@@ -72,7 +72,7 @@ const particlesConfig = {
           distance: 400,
           duration: 2,
           mix: false,
-          opacity: 0.9,
+          opacity: 0.5,
           size: 80,
           divs: {
             distance: 200,
@@ -82,9 +82,9 @@ const particlesConfig = {
           }
         },
         connect: {
-          distance: 80,
+          distance: 180,
           links: {
-            opacity: 0.5
+            opacity: 0.9
           },
           radius: 120
         },
@@ -197,7 +197,7 @@ const particlesConfig = {
         }
       },
       color: {
-        value: ["#FFC251","#FAF2F2","#B2224C"],
+        value: ["#B08DA8","#FFFFFF","#FDA898"],
         animation: {
           h: {
             count: 0,
@@ -254,7 +254,7 @@ const particlesConfig = {
           acceleration: 9.81,
           enable: false,
           inverse: false,
-          maxSpeed: 50
+          maxSpeed: 10
         },
         path: {
           clamp: true,
@@ -277,7 +277,7 @@ const particlesConfig = {
         },
         random: false,
         size: false,
-        speed: 1.5,
+        speed: 1.3,
         spin: {
           acceleration: 0,
           enable: false
@@ -305,18 +305,18 @@ const particlesConfig = {
       opacity: {
         random: {
           enable: false,
-          minimumValue: 0.1
+          minimumValue: 0.5
         },
-        value: 0.5,
+        value: 0.8,
         animation: {
-          count: 0,
-          enable: false,
-          speed: 1,
+          count: 10,
+          enable: true,
+          speed: 0.6,
           decay: 0,
           sync: false,
           destroy: "none",
           startValue: "random",
-          minimumValue: 0.1
+          minimumValue: 0.5
         }
       },
       reduceDuplicates: false,
@@ -496,7 +496,7 @@ const particlesConfig = {
         width: 1
       },
       links: {
-        blink: false,
+        blink: true,
         color: {
           value: "#ffffff"
         },
