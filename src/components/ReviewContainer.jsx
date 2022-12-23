@@ -10,7 +10,7 @@ const ReviewContainer = () => {
   const data = reviewsData;
   return (
     <div className="w-full h-auto bg-primary">
-      <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700" className="mx-auto bg-primary overflow-hidden w-[90%]  md:w-[80%] 3xl:container 3xl:w-[80%] xl:px-8 md:pb-8">
+      <div data-aos="fade-up"  data-aos-offset="150" data-aos-easing="linear" data-aos-duration="700" className="mx-auto pt-9 bg-primary overflow-hidden w-[90%]  md:w-[80%] 3xl:container 3xl:w-[80%] xl:px-8 md:pb-8">
         <div className="w-full  pt-4 pb-12 ">
           <h1 className="text-3xl font-averia font-semibold">
           Valoraciones de nuestros clientes
@@ -26,6 +26,7 @@ const ReviewContainer = () => {
           loopedSlides={4}
           initialSlide={2}
           centeredSlides={true}
+          speed={1600}
           autoplay={{
             delay: 5500,
             pauseOnMouseEnter: true,
