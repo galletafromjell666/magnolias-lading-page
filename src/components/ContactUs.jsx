@@ -5,7 +5,7 @@ import Map from "./Map";
 const ContactUs = () => {
   return (
     <div  className="w-full h-auto bg-primary">
-      <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700" className="mx-auto bg-primary overflow-hidden w-[90%]  md:w-[80%] 3xl:container 3xl:w-[80%] xl:px-8 md:pb-4">
+      <div data-aos="fade-up" data-aos-easing="linear" data-aos-offset="150" data-aos-duration="700" className="pt-9 mx-auto bg-primary overflow-hidden w-[90%]  md:w-[80%] 3xl:container 3xl:w-[80%] xl:px-8 md:pb-4">
         <div className="w-full  pt-2 pb-4 ">
           <h1 className="text-3xl font-averia font-semibold">Comunicate con nosotros</h1>
           <h2 className="text-xl  font-inter font-light text-black/75">
@@ -26,7 +26,7 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1">
+          <div className="pt-4 flex-1 md:pt-0">
             <Map></Map>
           </div>
         </div>

@@ -6,11 +6,11 @@ const reviewsData = [
     ProfilePic:
       "https://images.pexels.com/photos/3926827/pexels-photo-3926827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     reviewContent:
-      "Me gusto mucho que la atencion es personalizada y te atienden muy amablemente. El personal es muy atento y servicial.",
+      "Me gustó mucho que la atención es personalizada y te atienden muy amablemente. El personal es muy atento y servicial.",
   },
   {
     id: 2,
-    name: "Fatima Aleman",
+    name: "Fátima Aleman",
     position: "unknow",
     ProfilePic:
       "https://images.pexels.com/photos/2400001/pexels-photo-2400001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -22,8 +22,8 @@ const reviewsData = [
     name: "Majo Alfaro",
     position: "unknow",
     ProfilePic:
-      "https://images.pexels.com/photos/2954493/pexels-photo-2954493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    reviewContent: "Llevo dos años visitando este salon, la amabilidad y experiencia de la chica que me atiende me hace regresar."
+      "https://images.pexels.com/photos/11008006/pexels-photo-11008006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    reviewContent: "Llevo dos años visitando este salón, la amabilidad y experiencia de la chica que me atiende me hace regresar."
     ,
   },
   {
@@ -32,12 +32,12 @@ const reviewsData = [
     position: "unknow",
     ProfilePic:
       "https://images.pexels.com/photos/2221875/pexels-photo-2221875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      reviewContent: "Me gusta que sea un lugar centrico y de facil acceso, me permite visitar el salon despues de un dia de trabajo para consentirme.",
+      reviewContent: "Me gusta que sea un lugar céntrico y de fácil acceso, me permite visitar el salón después de un día de trabajo para consentirme.",
       
   },
   {
     id: 5,
-    name: "Alexandra Asencio",
+    name: "Alexandra Ascencio",
     position: "unknow",
     ProfilePic:
       "https://images.pexels.com/photos/1844008/pexels-photo-1844008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
