@@ -1,11 +1,12 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-scroll";
 const Navbar = () => {
   const [isNavOpen, setisNavOpen] = useState(false);
   const [isDropdownHover, setisDropdownHover] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-primary font-inter md:text-2xl p-1 py-0 text-selection-disable " >
+    <nav className="sticky top-0 z-50 bg-primary font-inter md:text-2xl p-1 py-0 text-selection-disable ">
       <div className="w-full  flex flex-wrap items-center justify-between ">
         <a href="/#" className="flex items-center pl-2">
           <img
@@ -51,13 +52,16 @@ const Navbar = () => {
         >
           <ul className="flex flex-col p-4 mt-4 border-0  rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-primary">
             <li>
-              <a
-                href="/#"
+              <Link
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className="block py-2 pl-3 pr-4 text-black md:hover:text-secondaryTextColor rounded md:bg-transparent  md:p-0 "
-                aria-current="page"
               >
                 Inicio
-              </a>
+              </Link>
             </li>
             <li
               className="relative"
@@ -93,19 +97,31 @@ const Navbar = () => {
                 >
                   <li>
                     <a
-                      href="https://api.whatsapp.com/send?phone=50372862804" target="_blank" rel="noopener noreferrer"
+                      href="https://api.whatsapp.com/send?phone=50372862804"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="block px-4 py-2 hover:bg-gray-100 focus:bg-gray-100 "
                     >
                       WhatsApp
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/salon.magnolias/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-100 ">
+                    <a
+                      href="https://www.instagram.com/salon.magnolias/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-4 py-2 hover:bg-gray-100 "
+                    >
                       Instagram
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.facebook.com/people/Magnolias-Sal%C3%B3n/100063964803631/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-100 ">
+                    <a
+                      href="https://www.facebook.com/people/Magnolias-Sal%C3%B3n/100063964803631/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-4 py-2 hover:bg-gray-100 "
+                    >
                       Facebook
                     </a>
                   </li>
@@ -113,20 +129,29 @@ const Navbar = () => {
               </div>
             </li>
             <li>
-              <a
-                href="/#"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-secondaryTextColor md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="block py-2 pl-3 pr-4 text-black md:hover:text-secondaryTextColor rounded md:bg-transparent  md:p-0 "
               >
-                Newsletter
-              </a>
+                Servicios
+              </Link>
             </li>
             <li>
-              <a
-                href="/#"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-secondaryTextColor md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            <Link
+
+                to="contactUs"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="block py-2 pl-3 pr-4 text-black md:hover:text-secondaryTextColor rounded md:bg-transparent  md:p-0 "
               >
                 Dirección
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
